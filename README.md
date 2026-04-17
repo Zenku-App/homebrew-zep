@@ -9,9 +9,11 @@ on your Mac.
 Prefer to have Claude, ChatGPT, Cursor, or your editor's AI do it for
 you? Copy this prompt into your assistant:
 
-> Install zep by following the "For AI agents" section of
-> https://github.com/Zenku-App/homebrew-zep#for-ai-agents — follow it
-> exactly, don't improvise.
+```
+Install zep by following the "For AI agents" section of
+https://github.com/Zenku-App/homebrew-zep#for-ai-agents — follow it
+exactly, don't improvise.
+```
 
 The agent will run a few `brew` commands and print the version. You
 still approve each command before it runs.
