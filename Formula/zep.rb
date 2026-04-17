@@ -5,12 +5,12 @@
 class Zep < Formula
   desc "Personal ops console"
   homepage "https://github.com/Zenku-App/homebrew-zep"
-  version "2026.4.8"
+  version "2026.4.9"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.4.8/zep_2026.4.8_darwin_arm64.tar.gz"
-    sha256 "0c18b203735b70c50cedee0852f1ff6280d8f278de560b633898944126a2a0d0"
+    url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.4.9/zep_2026.4.9_darwin_arm64.tar.gz"
+    sha256 "7fbadafe3ff6e1f4af69e083d262ee7dcb66ba5912b0a9b343951acbc8402610"
 
     define_method(:install) do
       bin.install "zep"
