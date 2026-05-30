@@ -10,7 +10,7 @@ class ZepDesktop < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-desktop_2026.5.1_darwin_amd64.tar.gz"
-      sha256 "bf2d66ccd2296bbaf85828cfee26f6b4234fe288b9c64a34e077fb7fcbc0da9f"
+      sha256 "246123fd8d8fa1b81447cbe0d13b6ca20bb73823c80c34e38ddeab1f798abe80"
 
       define_method(:install) do
         bin.install "zep-desktop"
@@ -18,7 +18,7 @@ class ZepDesktop < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-desktop_2026.5.1_darwin_arm64.tar.gz"
-      sha256 "230045db325724831f137cfbf771794757dba187e491890445aa74da10c7133d"
+      sha256 "59a5516d981f2b2343a4e5bbc4ece07ec582676d6d40fc440a8910422d80c7cc"
 
       define_method(:install) do
         bin.install "zep-desktop"
@@ -29,14 +29,14 @@ class ZepDesktop < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-desktop_2026.5.1_linux_amd64.tar.gz"
-      sha256 "1297fbdabc3519c58e3b666d1ce766b05d143410a76cc0a30c47b8b7e0b693b0"
+      sha256 "0f45454c56cca1829b49f646cc9c00d8448819a5e4525d57bdddb210749172fb"
       define_method(:install) do
         bin.install "zep-desktop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-desktop_2026.5.1_linux_arm64.tar.gz"
-      sha256 "88281500f2bd7a8368e149224fd05251d4ee59feaf380dc88f9fc0e37ef3e94a"
+      sha256 "86afd92574e2fc8bfb10586b7a2440e20f933879966ae57346a4aca0ec62108b"
       define_method(:install) do
         bin.install "zep-desktop"
       end
