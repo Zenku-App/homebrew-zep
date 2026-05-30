@@ -10,7 +10,7 @@ class ZepServer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-server_2026.5.1_darwin_amd64.tar.gz"
-      sha256 "d5c8e00bc883bd187af4e383459556690a1106d8f9cdf041454d88630309d49c"
+      sha256 "0b42d0c33c2559b09fdc99bfb2d1cd12a15fc35cb0a55b5617a9e691b5d3c6ed"
 
       define_method(:install) do
         bin.install "zep-server"
@@ -18,7 +18,7 @@ class ZepServer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-server_2026.5.1_darwin_arm64.tar.gz"
-      sha256 "f18e8fb66909c637be6b4e9c98f1bc6af95cd25f3f9706cb6577d8d9c98e5d6f"
+      sha256 "0ece84a977af81b05e06ac1dcf1fcd5b1b96bef0db28a8f673edbf2571e1f137"
 
       define_method(:install) do
         bin.install "zep-server"
@@ -29,14 +29,14 @@ class ZepServer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-server_2026.5.1_linux_amd64.tar.gz"
-      sha256 "2214b950b13be9464c3e455733801e186c567986ddf1bfee86d4c8b32be403dd"
+      sha256 "10fb76e7c6a27efe6d05a540f1bb150fcd194d209adfa0caad1207ae95e57f18"
       define_method(:install) do
         bin.install "zep-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.5.1/zep-server_2026.5.1_linux_arm64.tar.gz"
-      sha256 "d20d7764880fe9adb05661acc5a185bf9835b54500e9d5c9c05695fdb9f30a9d"
+      sha256 "417cafcaf31c67e98db2a88cdeab121d1264ce7672cc5ca7645a9f101a941108"
       define_method(:install) do
         bin.install "zep-server"
       end
