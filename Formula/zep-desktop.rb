@@ -5,20 +5,20 @@
 class ZepDesktop < Formula
   desc "Personal ops console"
   homepage "https://github.com/Zenku-App/homebrew-zep"
-  version "2026.6.8"
+  version "2026.6.9"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.8/zep-desktop_2026.6.8_darwin_amd64.tar.gz"
-      sha256 "e8eef95f891502548e46fad7e1fb9f2162aaec74590e0828d0a700a1059b70dd"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.9/zep-desktop_2026.6.9_darwin_amd64.tar.gz"
+      sha256 "b915e22d5929a42eba046112cd052c887e5d934037afbb291732e70be32c4d3a"
 
       define_method(:install) do
         bin.install "zep-desktop"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.8/zep-desktop_2026.6.8_darwin_arm64.tar.gz"
-      sha256 "a9437e4eb9790ac2d949475495589599c58a2d6b25e0fa7ef1df12d99ad71d2c"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.9/zep-desktop_2026.6.9_darwin_arm64.tar.gz"
+      sha256 "bb48ff8a2ff9c5e53d22ebf7b46376a02256eac1a5431957939c915672ab106e"
 
       define_method(:install) do
         bin.install "zep-desktop"
@@ -28,15 +28,15 @@ class ZepDesktop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.8/zep-desktop_2026.6.8_linux_amd64.tar.gz"
-      sha256 "13c2e8b492401563936da71bb42c740528be438b829527419db78732afa45fce"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.9/zep-desktop_2026.6.9_linux_amd64.tar.gz"
+      sha256 "cae8f210e634baa2a06398cd020da736440a761a8e5163ea185c14d292ad6236"
       define_method(:install) do
         bin.install "zep-desktop"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.8/zep-desktop_2026.6.8_linux_arm64.tar.gz"
-      sha256 "9bbe21dfc429d147ade7e1993956fe072af89d8ee38b3e43897ecdb5ee4f3f42"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.9/zep-desktop_2026.6.9_linux_arm64.tar.gz"
+      sha256 "5598baf44e04054423a6d941a8dd9b944ba4d71e8bec79000ac51c5daf39bf17"
       define_method(:install) do
         bin.install "zep-desktop"
       end
