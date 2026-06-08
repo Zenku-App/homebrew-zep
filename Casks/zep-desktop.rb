@@ -1,8 +1,8 @@
 cask "zep-desktop" do
-  version "2026.6.9"
-  sha256 "a2d0840c77982cb8b40f7403378ca226ca83a34a0909935d81ef8e53c554eb91"
+  version "2026.6.10"
+  sha256 "aa09611e77dc784a7a9dff520c6c95295784a111786be0c2f7828273943f276f"
 
-  url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.9/Zep_2026.6.9_aarch64.dmg"
+  url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.10/Zep_2026.6.10_aarch64.dmg"
   name "Zep"
   desc "Zep desktop app"
   homepage "https://github.com/Zenku-App/homebrew-zep"
