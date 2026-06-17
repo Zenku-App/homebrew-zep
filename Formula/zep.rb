@@ -5,15 +5,41 @@
 class Zep < Formula
   desc "Personal ops console"
   homepage "https://github.com/Zenku-App/homebrew-zep"
-  version "2026.4.14"
-  depends_on :macos
+  version "2026.6.17"
 
-  if Hardware::CPU.arm?
-    url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.4.14/zep_2026.4.14_darwin_arm64.tar.gz"
-    sha256 "ce9b3a337bfd0d978eceedd09e5b88323378a1c06ab3709183a21bf320bfd523"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.17/zep_2026.6.17_darwin_amd64.tar.gz"
+      sha256 "f2bd4b256eee91644affa2b6909875ccb34c2c0799379365f20a2ccf768010bd"
 
-    define_method(:install) do
-      bin.install "zep"
+      define_method(:install) do
+        bin.install "zep"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.17/zep_2026.6.17_darwin_arm64.tar.gz"
+      sha256 "536fcdced3057351b0f3178195f40c73ecbcc23a5869c0e3663ba0f385035596"
+
+      define_method(:install) do
+        bin.install "zep"
+      end
+    end
+  end
+
+  on_linux do
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.17/zep_2026.6.17_linux_amd64.tar.gz"
+      sha256 "fd9f413c2954bea3c4594223b0e1c7f054cba4fe26e4cdb73ecc7e5b3d3675b5"
+      define_method(:install) do
+        bin.install "zep"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.17/zep_2026.6.17_linux_arm64.tar.gz"
+      sha256 "66acc91a2725f0590d4610e88b67d5301544266bde48274633d99fe72739da01"
+      define_method(:install) do
+        bin.install "zep"
+      end
     end
   end
 
