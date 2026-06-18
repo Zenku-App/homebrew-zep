@@ -5,20 +5,20 @@
 class ZepServer < Formula
   desc "Personal ops console (operator/server build)"
   homepage "https://github.com/Zenku-App/homebrew-zep"
-  version "2026.6.18"
+  version "2026.6.19"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.18/zep-server_2026.6.18_darwin_amd64.tar.gz"
-      sha256 "d9efbca1d30f09bf0a1c0e03b5a5141d6abf5e584d00946c5cd96935918fe694"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.19/zep-server_2026.6.19_darwin_amd64.tar.gz"
+      sha256 "8d582da9c996ed869894102a54bd043a92475a7458d94d120ed223b6f4435b6f"
 
       define_method(:install) do
         bin.install "zep-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.18/zep-server_2026.6.18_darwin_arm64.tar.gz"
-      sha256 "4fbe7e9aea95ebd6018803cf64b4b5dd7ca54bd9b6c759accdca9fa08780bbe0"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.19/zep-server_2026.6.19_darwin_arm64.tar.gz"
+      sha256 "afdd6d7eb0490e3e8b832b8fc0f79f64cd62af37f95e1dc281f91ccfd94cce10"
 
       define_method(:install) do
         bin.install "zep-server"
@@ -28,15 +28,15 @@ class ZepServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.18/zep-server_2026.6.18_linux_amd64.tar.gz"
-      sha256 "4f5d43a1f7b453dc18ef1107048590e914e306c0c3049d6cefed4fdeab9adb27"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.19/zep-server_2026.6.19_linux_amd64.tar.gz"
+      sha256 "787c9da1c3fafedb5aa522728888905221800ca7c76dc119cd09cad9ee51a2da"
       define_method(:install) do
         bin.install "zep-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.18/zep-server_2026.6.18_linux_arm64.tar.gz"
-      sha256 "cdb8412dc9bbf0173a984ccb6c1e0ba8060d3ad1399a72c43ccae570a4ef9b57"
+      url "https://github.com/Zenku-App/homebrew-zep/releases/download/v2026.6.19/zep-server_2026.6.19_linux_arm64.tar.gz"
+      sha256 "87c09648b9c3b2982ae91b4a8e6885b31b977c2eabbd2e6010768a3cafdfcfac"
       define_method(:install) do
         bin.install "zep-server"
       end
